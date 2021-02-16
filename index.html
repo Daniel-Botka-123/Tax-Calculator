@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Tax Calculator Application">
+    <meta name="author" content="Daniel Botka" />
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FAVICON -->
+    <link rel="icon" href="img/favicon.jpg">
+    <!-- TITLE -->
+    <title>Tax Calculator</title>
+  </head>
+
+  <body>
+    <!-- MAIN SECTION -->
+    <section id="main">
+      <div id="main_box">
+        <div id="main_box_title"><h1>KALKULAČKA ČISTEJ MZDY</h1></div>
+        <input id="main_box_input" type="number" placeholder="Zadajte Váš hrubý mesačný plat v eurách ...">
+        <br>
+        <div><input id="main_box_bonus" type="checkbox"><b> Uplatňujem si nezdaniteľnú časť</b></div>
+        <button id="main_box_button" class="button_style"><b>VYPOČÍTAJ</b></button>
+      </div>
+    </section>
+    
+    <!-- POP UP SECTION -->
+
+    <section id="pop_up">
+      <h1><b>Výsledok výpočtu čistej mzdy</b></h1>
+      <!--RIGHT BOX -->
+      <div id="pop_up_box_1">
+        <div id="pop_up_box_1_left">
+          <h3><img src="img/gross.jpg">&nbsp &nbsp Hrubá mzda<span id="hruba_mzda" class="number_adjust_black"><b></b></span></h3>
+          <hr>
+          <h3><img src="img/employee.jpg">&nbsp &nbsp Odvody zamestnanec<span id="zamestnanec" class="number_adjust_black"><b></b></span></h3>
+          <h4>Starobné poistenie<span id="starobne" class="number_adjust_grey"></span></h4>
+          <h4>Invalidné poistenie<span id="invalidne" class="number_adjust_grey"></span></h4>
+          <h4>Nemocenské poistenie<span id="nemocenske" class="number_adjust_grey"></span></h4>
+          <h4>Poistenie v nezamestnanosti<span id="nezamestnanosti" class="number_adjust_grey"></span></h4>
+          <h4>Zdravotné poistenie<span id="zdravotne" class="number_adjust_grey"></span></h4>
+          <h3><img src="img/tax.jpg">&nbsp &nbsp Daň z príjmu<span id="daň" class="number_adjust_black"><b></b></span></h3>
+          <hr>
+          <h3><img src="img/salary.jpg">&nbsp &nbsp Čistá mzda na účet<span id="čistá" class="number_adjust_black"><b></b></span></h3>
+        </div>
+         <button id="pop_up_box_button" class="button_style"><b>OK</b></button>
+      </div>
+      <!--RIGHT BOX & CANVAS-->
+       <div id="pop_up_box_2"><canvas id="canvas"></canvas></div>
+    </section>
+    <!-- JAVA SCRIPT -->
+    <script src="index.js" defer></script>
+  </body>
+</html>

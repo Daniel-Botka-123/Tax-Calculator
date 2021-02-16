@@ -1,0 +1,155 @@
+/* ************************************************************ BODY SECTION ************************************************************ */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ************************************************************ MAIN SECTION ************************************************************ */
+#main {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to right bottom, rgba(16, 50, 73, 0.8), rgba(40, 180, 131, 0.8)),
+        url("img/bg.jpg");
+}
+
+#main_box {
+    height: 40vh;
+    width: 50vw;
+    border-radius: 10px;
+    background-color: rgb(200, 247, 197, 0.65);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main_box_title {
+    height: 9.375vh;
+    width: 50vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #09015f;
+    position: relative;
+}
+
+#main_box_title h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 1)
+}
+
+#main_box_input {
+    width: 75%;
+    height: 7.5vh;
+    margin-top: 7.5vh;
+    margin-left: 6vw;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+#main_box_bonus {
+    margin-top: 3vh;
+    margin-left: 7vw;
+}
+
+.button_style {
+    width: 28.5%;
+    height: 3vw;
+    position: absolute;
+    bottom: 5vh;
+    right: 5.5vw;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 0);
+    border: none;
+    outline: none;
+}
+
+.button_style:hover {
+    background-color: rgb(20, 214, 20);
+    cursor: pointer;
+}
+
+.button_style:focus {
+    transform: translate(0, 2px);
+}
+
+/* ************************************************************ POP UP SECTION ************************************************************ */
+#pop_up {
+
+    visibility: hidden; /* HERE */
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(239, 239, 239, 1);
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    border-radius: 10px;
+}
+
+#pop_up h1 {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 2.5vh;
+    font-size: 32px;
+}
+
+/* LEFT BOX */
+
+#pop_up_box_1 {
+    width: 40vw;
+    height: 50vh;
+    float: left;
+}
+
+/* LEFT LEFT BOX */
+
+#pop_up_box_1_left {
+    margin-top: 5vh;
+    margin-left: 5vh;
+}
+
+.number_adjust_grey {
+    float: right;
+    margin-right: 10vw;
+    color: rgb(128, 128, 128);
+}
+
+.number_adjust_black {
+    float: right;
+    margin-right: 10vw;
+    color: rgb(0, 0, 0);
+}
+
+#pop_up_box_1_right hr {
+    border: 0.5px solid red;
+    margin-right: 8.5vw;
+}
+
+/* RIGHT BOX */
+
+#pop_up_box_2 {
+    width: 40vw;
+    height: 52.5vh;
+    /* background-color: darkblue; */
+    float: right;
+    position: relative;
+}
+
+canvas {
+    width: 30vw;
+    height: 40vh;
+    top: 6.25vh;
+    left: 5vw;
+    position: absolute;
+}
